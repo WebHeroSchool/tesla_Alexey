@@ -2,10 +2,11 @@
 <html lang="ru">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="initial-scale=1.0, width=device-width">
 	<title>Tesla Model S</title>
 	<link rel="stylesheet" href="fonts.css">
 	<link rel="stylesheet" href="css/header.css">
-
+	<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
 	<header class="main-header">
@@ -20,37 +21,37 @@
 		<div class="toolbox">
 			<a href="#" class="toolbox__item">Магазин</a>
 			<a href="#" class="toolbox__item">Войти</a>
-			<div class="hamburger">
-				<span class="hamburger__line hamburger__line_first"></span>
-				<span class="hamburger__line hamburger__line_second"></span>
-				<span class="hamburger__line hamburger__line_third"></span>
-			</div>
+			<div class="hamburger"></div>
 		</div>
 	</header>
 	<main class="main-content">
 		<section class="car-main">
 			<h1 class="car-main__title">Model S</h1>
 			<h2 class="car-main__desc">Добро пожаловать в будущее!</h2>
-			<img src="#" alt="Model S" class="car-main__img">
-			<div class="spec-wrapper">
-				<div class="car-spec car-spec_icon_speed">
-					<p class="car-spec__desc">
-						<span class="car-spec__value">2,7</span>
-						сек
-					</p>
-					<p class="car-spec__general">0-100 км/час</p>
-				</div>
-				<div class="car-spec car-spec_icon_distance">
-					<p class="car-spec__desc">
-						<span class="car-spec__value">632</span>
-						км
-					</p>
-					<p class="car-spec__general">Запас хода</p>
-				</div>
+			<div class="car-main__img-wrapper">
+				<img src="pictures/tesla-model-s.png" alt="Model S" class="car-main__img">
 			</div>
-			<div class="test-order-wrapper">
-				<a href="#" class="test-drive">ТЕСТ ДРАЙВ</a>
-				<a href="#" class="order-btn order-btn_color_red">ЗАКАЗАТЬ</a>
+			<div class="spec-order-wrapper">
+				<div class="spec-wrapper">
+					<div class="car-spec car-spec_icon_speed">
+						<p class="car-spec__desc">
+							<span class="car-spec__value">2,7</span>
+							сек
+						</p>
+						<p class="car-spec__general">0-100 км/час</p>
+					</div>
+					<div class="car-spec car-spec_icon_distance">
+						<p class="car-spec__desc">
+							<span class="car-spec__value">632</span>
+							км
+						</p>
+						<p class="car-spec__general">Запас хода</p>
+					</div>
+				</div>
+				<div class="test-order-wrapper">
+					<a href="#" class="test-drive">ТЕСТ ДРАЙВ</a>
+					<a href="#" class="order-btn order-btn_color_red">ЗАКАЗАТЬ</a>
+				</div>
 			</div>
 		</section>
 		<section class="car-decs">

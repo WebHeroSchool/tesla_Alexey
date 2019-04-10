@@ -1,4 +1,4 @@
-.main-header {
+.header {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
@@ -11,7 +11,7 @@
 	height: 51px;
 }
 
-.nav-main {
+.nav {
 	display: flex;
 	align-items: center;
 	font-style: normal;
@@ -20,19 +20,19 @@
 	line-height: normal;
 }
 
-.nav-main__item {
+.nav__item {
 	margin-right: 45px;
 	text-decoration: none;
 	color: #000000;
 }
 
-.nav-main__item_active {
+.nav__item_active {
 	position: relative;
 	margin-right: 63px;
 	color: #E51937;
 }
 
-.nav-main__item_active:after {
+.nav__item_active:after {
 	content: "";
 	display: block;
 	width: 100%;
@@ -69,7 +69,7 @@
 /* Медиазапросы */
 
 @media (max-width: 480px) {
-	.main-header {
+	.header {
 		margin: 5px 21px 30px 2px;
 	}
 
@@ -78,7 +78,7 @@
 		height: 42px;
 	}
 	
-	.nav-main {
+	.nav {
 		display: none;
 	}
 
@@ -89,7 +89,7 @@
 }
 
 @media (min-width: 481px) and (max-width: 1024px) {
-	.main-header {
+	.header {
 		margin: 24px 33px 80px 15px;
 	}
 
@@ -98,7 +98,7 @@
 		height: 51px;
 	}
 	
-	.nav-main {
+	.nav {
 		display: none;
 	}
 

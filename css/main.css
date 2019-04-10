@@ -1,8 +1,8 @@
-.main-content {
+.content {
 	font-family: 'Montserrat';
 }
 
-.car-main {
+.car {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -12,27 +12,27 @@
 	background-size: 100% auto;
 }
 
-.car-main__title {
+.car__title {
 	margin: 0;
 	font-weight: 600;
 	font-size: 90px;
 }
 
-.car-main__desc {
+.car__desc {
 	margin: 0;
 	margin-bottom: 27px;
 	font-weight: 500;
 	font-size: 15px;
 }
 
-.car-main__img-wrapper{
+.car__img-wrapper{
 	max-width: 968px;
 	min-width: 320px;
 	margin-bottom: 25px;
 	/*padding: 0 9px;*/
 }
 
-.car-main__img {
+.car__img {
 	width: 100%;
 }
 
@@ -133,15 +133,15 @@
 /* Медиазапросы */
 
 @media (max-width: 480px) {
-	.car-main {
+	.car {
 		background-position: center 25%;
 	}
 
-	.car-main__title {
+	.car__title {
 		font-size: 50px;
 	}
 
-	.car-main__desc {
+	.car__desc {
 		font-size: 10px;
 		margin-bottom: 49px;
 	}
@@ -211,11 +211,11 @@
 }
 
 @media (min-width: 481px) and (max-width: 1024px) {
-	.car-main {
+	.car {
 		background-position: center 35%;
 	}
 	
-	.car-main__desc {
+	.car__desc {
 		margin-bottom: 87px;
 	}
 

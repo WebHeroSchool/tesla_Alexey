@@ -1,3 +1,5 @@
+
+
 .content {
 	font-family: 'Montserrat';
 }
@@ -6,10 +8,27 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	margin-bottom: 100px;
+	position: relative;
 	background-image: url("../img/tesla-bg.svg");
 	background-repeat: no-repeat;
 	background-position: center top;
 	background-size: 100% auto;
+}
+
+.car:before {
+	position: absolute;
+	left: 50%;
+	top: 105%;
+	transform: translateX(-50%);
+	transform: rotate(-45deg);
+	cursor: pointer;
+	content: "";
+	display: block;
+	width: 20px;
+	height: 20px;
+	border-left: 3px solid #E51937;
+	border-bottom: 3px solid #E51937;
 }
 
 .car__title {
@@ -130,6 +149,258 @@
 	border-color: #E51937;
 }
 
+.car-decs {
+	display: flex;
+	justify-content: space-between;
+	min-height: 900px;
+}
+
+.car-decs__title {
+	width: 100%;
+	margin: 0;
+	padding-top: 58px;
+	padding-left: 80px;
+	background-image: url("../img/model-s-bg.png");
+	background-repeat: no-repeat;
+	background-position: left bottom;
+	font-weight: 600;
+	font-size: 70px;
+	color: #E51937;
+}
+
+.car-about {
+	display: flex;
+	flex-direction: column;
+	justify-content:space-between;
+	width: 344px;
+	padding: 51px 72px 63px 52px;
+	color: #ffffff;
+	background-color: #E51937;
+}
+
+.car-about__title {
+	margin: 0 0 11px 0;
+	font-weight: 600;
+	font-size: 30px;
+}
+
+.car-about__text {
+	width: 316px;
+	margin: 0 0 54px 0;
+	font-weight: 500;
+	font-size: 15px;
+}
+
+.car-odds {
+	position: relative;
+	width: 200px;
+	margin-bottom: 44px;
+}
+
+.car-odds_icon_display {
+	padding-left: 55px;
+}
+
+.car-odds_icon_display:before {
+	position: absolute;
+	left: 0;
+	top: 15px;
+	content: "";
+	display: block;
+	width: 36px;
+	height: 53px;
+	background: url("../img/screen-icon.svg");
+	background-size: 100% 100%;
+}
+
+.car-odds_icon_wifi {
+	padding-left: 64px;
+	margin-bottom: 25px;
+}
+
+.car-odds_icon_wifi:before {
+	position: absolute;
+	left: -3px;
+	top: 16px;
+	content: "";
+	display: block;
+	width: 44px;
+	height: 34px;
+	background: url("../img/wifi-icon.svg");
+	background-size: 100% 100%;
+}
+
+.car-odds_icon_bag {
+	padding-left: 60px;
+}
+
+.car-odds_icon_bag:before {
+	position: absolute;
+	left: 0px;
+	top: 14px;
+	content: "";
+	display: block;
+	width: 36px;
+	height: 52px;
+	background: url("../img/bag-icon.svg");
+	background-size: 100% 100%;
+}
+
+.car-odds__desc {
+	margin: 0 0 1px 0;
+	font-weight: 600;
+	font-size: 20px;
+}
+
+.car-odds__value {
+	margin-right: 10px;
+	font-size: 35px;
+}
+
+.car-odds__general {
+	width: 180px;
+	margin: 0;
+	font-weight: normal;
+	font-size: 12px;
+}
+
+.more {
+	position: relative;
+	padding-left: 29px;
+	margin-right: 22px;
+	text-decoration: none;
+	color: #ffffff;
+	font-weight: bold;
+	font-size: 13px;
+}
+
+.more-order-wrapper {
+	vertical-align: bottom;
+	align-self: flex-start;
+}
+
+.more:before {
+	position: absolute;
+	left: 0px;
+	top: -4px;
+	content: "";
+	display: block;
+	width: 22px;
+	height: 22px;
+	background: url("../img/more-icon.svg");
+	background-size: 100% 100%;
+}
+
+.order-btn_color_white {
+	color: #ffffff;
+	border-color: #ffffff;
+}
+
+.car-safety{
+	display: flex;
+	justify-content: space-between;
+	min-height: 900px;
+}
+
+.safety-about {
+	display: flex;
+	flex-direction: column;
+	justify-content:space-between;
+	width: 344px;
+	padding: 51px 72px 63px 52px;
+	color: #ffffff;
+	background-color: #E51937;
+}
+
+.safety-about__title {
+	margin: 0 0 11px 0;
+	font-weight: 600;
+	font-size: 30px;
+}
+
+.safety-about__text {
+	width: 316px;
+	margin: 0 0 54px 0;
+	font-weight: 500;
+	font-size: 15px;
+}
+
+.safety-rating {
+	font-weight: 500;
+	font-size: 15px;
+	text-transform: uppercase;
+
+}
+
+.safety-rating__desc {
+	display: inline-block;
+	width: 120px;
+	margin-right: 25px;
+}
+
+.safety-rating__desc_small {
+	font-weight: bold;
+	font-size: 10px;
+	opacity: 0.7;
+}
+
+.star-wrapper {
+	display: inline-block;
+	width: 160px;
+}
+
+.safety-rating__star {
+	display: inline-block;
+	width: 25px;
+	height: 25px;
+	margin-right: 3px;
+	vertical-align: bottom;
+	background-image: url("../img/star-icon.svg");
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+.safety-all {
+	position: relative;
+	margin-left: 20px;
+	padding-left: 85px;
+	margin-top: 100px;
+	font-weight: 600;
+	font-size: 25px;
+}
+
+.safety-all:before {
+	position: absolute;
+	left: 0px;
+	top: 14px;
+	content: "";
+	display: block;
+	width: 62px;
+	height: 74px;
+	background: url("../img/safety-icon.svg");
+	background-size: 100% 100%;
+}
+
+.safety-all__value {
+	font-size: 50px;
+}
+
+.safety-ilustration {
+	width: 100%;
+	position: relative;
+}
+
+.safety-ilustration__img {
+	width: 100%;
+	position: absolute;
+	top: 50%;
+	left: -80px;
+	transform: translateY(-50%);
+}
+
+
+
+
 /* Медиазапросы */
 
 @media (max-width: 480px) {
@@ -172,7 +443,6 @@
 		height: 37px;
 	}
 
-
 	.car-spec__desc {
 		font-size: 15px;
 	}
@@ -208,6 +478,67 @@
 		border-color: #E51937;
 	}
 
+	.car-decs {
+		flex-direction: column;
+		min-height: auto;
+	}
+	
+	.car-about {
+		width: auto;
+		padding: 18px 25px 0px 25px;
+	}
+
+	.car-about__text {
+		width: auto;
+	}
+
+	.car-decs__title {
+		margin: 0;
+		padding: 0;
+		color: transparent;
+		background-image: url("../img/model-s-bg_mobile.png");
+		background-position: center top;
+		background-size: cover;
+		min-height: 350px;
+	}
+
+	.car-odds-wrapper {
+		display: none;
+	}
+
+	.more-order-wrapper {
+		display: none;
+	}
+	
+	.car-safety {
+		flex-direction: column-reverse;
+		min-height: auto;
+	}
+
+	.safety-about {
+		width: auto;
+		padding: 18px 25px 0px 25px;
+	}
+
+	.safety-about__text {
+		width: auto;
+	}
+
+	.safety-rating-wrapper {
+		display: none;
+	}
+
+	
+
+	.safety-ilustration {
+		min-height: 300px;
+	}
+
+	.safety-ilustration__img {
+		left: 50%;
+		top: 50%;
+		transform: translateX(-50%) translateY(-50%);
+	}
 }
 
 @media (min-width: 481px) and (max-width: 1024px) {
@@ -269,18 +600,140 @@
 
 	.test-drive {
 		margin-right: 35px;
+		padding-left: 41px;
 		color: #E51937;
+		font-size: 16px;
 	}
 
 	.test-drive:before {
+		top: -5px;
+		width: 30px;
+		height: 30px;
 		background: url("../img/steering-wheel-icon-red.svg");
+		background-size: 100% 100%;
 	}
 
 	.order-btn_color_red {
+		padding: 12px 48px;
+		font-size: 16px;
 		color: #ffffff;
 		background-color: #E51937;
 		border-color: #E51937;
 	}
 
+	.car-decs {
+		flex-direction: column;
+		min-height: auto;
+	}
+	
+	.car-about {
+		flex-direction: row;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		width: auto;
+		padding: 56px 34px 52px 34px;
+	}
 
+	.car-about__text {
+		width: auto;
+	}
+
+	.car-text-wrapper {
+		width: 45%;
+		margin-right: 3%;
+	}
+
+	.car-decs__title {
+		width: auto;
+		margin: 0;
+		padding: 0;
+		padding-right: 40px;
+		color: #E51937;
+		text-align: right;
+		background-image: url("../img/model-s-bg_tabl.png");
+		background-position: center center;
+		background-size: cover;
+		min-height: 505px;
+	}
+
+	.car-odds-wrapper {
+		width: 50%;
+		margin-right: 0;
+		margin-left: auto;
+	}
+
+	.more-order-wrapper {
+		margin: 0 auto;
+	}
+
+	.more {
+		margin-right: 36px;
+		padding-left: 43px;
+		font-size: 16px;
+	}
+
+	.more:before {
+		left: 0px;
+		top: -6px;
+		width: 32px;
+		height: 32px;
+		background: url("../img/more-icon.svg");
+		background-size: 100% 100%;
+	}
+	
+	.order-btn_color_white {
+		padding: 12px 48px;
+    	font-size: 16px;
+	}
+
+	.car-odds {
+		width: auto;
+		max-width: 200px;
+		margin-right: 0;
+		margin-left: auto;
+	}
+
+	.car-safety {
+		flex-direction: column-reverse;
+		min-height: auto;
+	}
+
+	.safety-text-wrapper {
+		width: 46%;
+		
+	}
+
+	.safety-about {
+		flex-direction: row;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		width: auto;
+		padding: 56px 34px 52px 34px;
+	}
+
+	.safety-about__text {
+		width: auto;
+	}
+
+	.safety-rating-wrapper {
+		width: auto;
+		max-width: 45%;
+		margin-right: 0;
+		margin-left: auto;
+		margin-bottom: 80px;
+	}
+	
+	.safety-all {
+		display: none;
+	}
+
+	.safety-ilustration {
+		min-height: 800px;
+	}
+
+	.safety-ilustration__img {
+		left: 50%;
+		top: 50%;
+		transform: translateX(-50%) translateY(-50%);
+	}
 }

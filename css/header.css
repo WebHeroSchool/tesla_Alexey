@@ -1,0 +1,114 @@
+.header {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin: 24px 60px 58px 43px;
+	font-family: 'Montserrat';
+}
+
+.logo__img {
+	width: 166px;
+	height: 51px;
+}
+
+.nav {
+	display: flex;
+	align-items: center;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 15px;
+	line-height: normal;
+}
+
+.nav__item {
+	margin-right: 45px;
+	text-decoration: none;
+	color: #000000;
+}
+
+.nav__item_active {
+	position: relative;
+	margin-right: 63px;
+	color: #E51937;
+}
+
+.nav__item_active:after {
+	content: "";
+	display: block;
+	width: 100%;
+	height: 2px;
+	position: absolute;
+	bottom: -6px;
+	background-color: #E51937;
+	background: url("../img/nav-item-active.svg");
+	background-size: 100% 100%;
+}
+
+.toolbox {
+	display: flex;
+	align-items: center;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 15px;
+	line-height: normal;
+}
+
+.toolbox__item {
+	margin-right: 30px;
+	text-decoration: none;
+	color: #000000;
+}
+
+.hamburger {
+	width: 24px;
+	height: 15px;
+	background: url("../img/hamburger.svg");
+	background-size: 100% 100%;
+}
+
+/* Медиазапросы */
+
+@media (max-width: 480px) {
+	.header {
+		margin: 5px 21px 30px 2px;
+	}
+
+	.logo__img {
+		width: 138px;
+		height: 42px;
+	}
+	
+	.nav {
+		display: none;
+	}
+
+	.toolbox__item {
+		display: none;
+	}
+
+}
+
+@media (min-width: 481px) and (max-width: 1024px) {
+	.header {
+		margin: 24px 33px 80px 15px;
+	}
+
+	.logo__img {
+		width: 166px;
+		height: 51px;
+	}
+	
+	.nav {
+		display: none;
+	}
+
+	.toolbox__item {
+		display: none;
+	}
+
+}
+
+
+
+
+
